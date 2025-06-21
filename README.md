@@ -8,7 +8,7 @@ LASER can give significant performance improvements on question-answerting tasks
 
 ## How to run a sample code
 
-We first discuss installing the code and then discuss how to run an experiment.
+
 
 ### Installation
 
