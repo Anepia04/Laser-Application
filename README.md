@@ -20,10 +20,10 @@ pip install -r requirements.txt
 
 ### Run a sample code
 
-At the moment, each setup is its own file. To run an experiment that performs a single LASER transformer to GPTJ on the Fever dataset, you can run:
+At the moment, each setup is its own file. To run an experiment that performs a single LASER transformer to distilBERT on the Fever dataset, you can run:
 
 ```bash
-python intervention_distilgpt2_fever.py --lname fc_in --rate 9.9 --lnum 26 ----intervention rank-reduction
+python intervention_distilbert_fever.py --lname fc_in --rate 6 --lnum 4 --intervention rank-reduction
 ```
 
 here _lnum_ is &ell;, _lname_ is &tau;, and _rate_ is related to &rho; by &rho; = 1 - 0.1 * rate. The rate is a value between [0, 10.0] and measures how many components to throw away with 10 means all components are thrown away and we get a 0 matrix and 0 means all components are retained and we retain the original matrix. The use of rate is for legacy reasons and we will refactor the code to directly use &rho; in the future. The mapping for _lname_ that we use is:
